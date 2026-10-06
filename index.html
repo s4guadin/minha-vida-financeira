@@ -11,9 +11,9 @@
 :root[data-theme="dark"]{--bg:#0b0c0e;--cd:#14161a;--tx:#e8eaee;--mu:#9097a3;--bd:#23262c;--ac:#9aa2ff;--g:#4cbf8a;--r:#e27d76;--c1:#e8eaee;--c2:#aab0ba;--c3:#7b828e;--c4:#555b66;--c5:#363a42}
 *{box-sizing:border-box}html,body{margin:0;height:100%}body{background:var(--bg);color:var(--tx);font:14px/1.5 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;font-variant-numeric:tabular-nums}
 .skip{position:absolute;left:-999px;top:0;background:var(--tx);color:var(--bg);padding:8px 14px;border-radius:0 0 8px 0;z-index:50}.skip:focus{left:0}
-.app{display:flex;min-height:100%}aside{width:228px;flex:none;padding:20px 12px;background:var(--cd);border-right:1px solid var(--bd);position:sticky;top:0;height:100vh;display:flex;flex-direction:column;overflow:auto}
-.logo{font-weight:600;padding:0 10px 18px;font-size:14px}aside a,aside button.mi{display:flex;gap:10px;align-items:center;padding:8px 10px;border-radius:8px;color:var(--mu);cursor:pointer;font-weight:500;text-decoration:none;background:none;border:0;width:100%;text-align:left;font-size:14px}
-aside a:hover,aside button.mi:hover{background:var(--bg)}aside a.on{background:var(--bg);color:var(--tx)}aside .sp{flex:1}
+.app{display:flex;min-height:100%}#nav{width:228px;flex:none;padding:20px 12px;background:var(--cd);border-right:1px solid var(--bd);position:sticky;top:0;height:100vh;display:flex;flex-direction:column;overflow:auto}
+.logo{font-weight:600;padding:0 10px 18px;font-size:14px}#nav a,#nav button.mi{display:flex;gap:10px;align-items:center;padding:8px 10px;border-radius:8px;color:var(--mu);cursor:pointer;font-weight:500;text-decoration:none;background:none;border:0;width:100%;text-align:left;font-size:14px}
+#nav a:hover,#nav button.mi:hover{background:var(--bg)}#nav a.on{background:var(--bg);color:var(--tx)}#nav .sp{flex:1}
 main{flex:1;min-width:0;padding:28px 32px;max-width:1100px;margin:0 auto}
 .hd{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap;margin-bottom:20px}h1{font-size:22px;font-weight:600;margin:0;letter-spacing:-.01em}h3{font-size:14px;font-weight:600;margin:0 0 12px}.sub{color:var(--mu);margin:2px 0 0}
 .card{background:var(--cd);border:1px solid var(--bd);border-radius:12px;padding:18px;margin-bottom:16px;transition:border-color .15s}.card:hover{border-color:var(--c4)}
@@ -39,10 +39,10 @@ table{width:100%;border-collapse:collapse}th{font-size:12px;color:var(--mu);font
 .msg{padding:8px 0;border-bottom:1px solid var(--bd)}.msg b{font-weight:500;color:var(--mu)}
 .pager{display:flex;gap:8px;align-items:center;justify-content:center;padding:12px 0 4px;color:var(--mu);font-size:13px}
 .chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.chip{font-size:12px;border:1px solid var(--bd);border-radius:99px;padding:4px 10px;background:var(--bg);display:inline-flex;gap:6px;align-items:center}.chip button{border:0;background:none;cursor:pointer;color:var(--mu);padding:0}
-@media(max-width:820px){.app{display:block}aside{position:fixed;top:auto;bottom:0;left:0;right:0;width:auto;height:auto;flex-direction:row;padding:4px 4px calc(4px + env(safe-area-inset-bottom,0px));z-index:9;border-right:0;border-top:1px solid var(--bd)}.logo,aside .sp,.hideM{display:none}aside a{flex-direction:column;gap:2px;font-size:10px;padding:6px 8px;white-space:nowrap;flex:1;justify-content:center}
+@media(max-width:820px){.app{display:block}#nav{position:fixed;top:auto;bottom:0;left:0;right:0;width:auto;height:auto;flex-direction:row;padding:4px 4px calc(4px + env(safe-area-inset-bottom,0px));z-index:9;border-right:0;border-top:1px solid var(--bd)}.logo,#nav .sp,.hideM{display:none}#nav a{flex-direction:column;gap:2px;font-size:10px;padding:6px 8px;white-space:nowrap;flex:1;justify-content:center}
 main{padding:18px 16px 96px}.g4{grid-template-columns:1fr 1fr}.g2{grid-template-columns:1fr}.n{font-size:18px}
 }
-@media print{aside,#t,.noprint{display:none!important}.app{display:block}main{max-width:none;padding:0}.card{break-inside:avoid}}
+@media print{#nav,#t,.noprint{display:none!important}.app{display:block}main{max-width:none;padding:0}.card{break-inside:avoid}}
 </style></head><body>
 <a class="skip" href="#m">Pular para o conteúdo</a>
 <div class="app"><nav id="nav" aria-label="Menu"></nav><main id="m" tabindex="-1"></main></div><div id="t" role="status"></div>
