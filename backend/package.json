@@ -1,0 +1,12 @@
+{
+  "name": "minha-vida-financeira-backend",
+  "version": "1.0.0",
+  "description": "API simples de persistência para o app Minha Vida Financeira",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
